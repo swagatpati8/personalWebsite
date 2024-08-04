@@ -2187,9 +2187,9 @@ input, select, textarea {
 	input[type="button"],
 	button,
 	.button {
-		background-color: transparent;
+		background-color: #007ACC;
 		box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
-		color: #000000 !important;
+		color: white !important;
 	}
 
 		input[type="submit"]:hover,
@@ -2621,9 +2621,21 @@ input, select, textarea {
 	}
 
 	a.icon.style2:active:before {
-		background-color: rgba(71, 211, 229, 0.1);
+		background-color: rgba(22, 45, 223, 0.1);
 		box-shadow: inset 0 0 0 1px #47D3E5;
 		color: #47D3E5;
+	}
+
+	.custom-linkedin-icon {
+		color: #0077B5;
+		font-size: 24px; /* Adjust the size as needed */
+    	padding: 4px; /* Add some padding */
+    	transition: color 0.3s ease;
+		background-color: #ffffff;
+	}
+
+	.custom-linkedin-icon:hover {
+		color: #005582; /* Slightly darker blue on hover */
 	}
 
 /* Image */
@@ -2751,6 +2763,74 @@ input, select, textarea {
 	ul.alt li {
 		border-top-color: rgba(0, 0, 0, 0.2);
 	}
+
+
+
+/* Nav */
+
+#nav {
+	background-color: #252526;
+	text-align: right;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 10000;
+	cursor: default;
+	height: 2.5em;
+	line-height: 1.5em;
+}
+
+	#nav ul {
+		margin-bottom: 0;
+		list-style: none;
+		padding-left: 0;
+	}
+
+	#nav li {
+		display: inline-block;
+		padding-left: 0;
+	}
+
+	#nav a {
+		-moz-transition: background-color .2s ease-in-out;
+		-webkit-transition: background-color .2s ease-in-out;
+		-ms-transition: background-color .2s ease-in-out;
+		transition: background-color .2s ease-in-out;
+		position: relative;
+		display: block;
+		color: #D4D4D4;
+		text-decoration: none;
+		outline: 0;
+		font-weight: 600;
+		border-radius: 8px;
+		color: #D4D4D4;
+		height: 2.5em;
+		line-height: 2.5em;
+		padding: 0 1.25em;
+	}
+
+		#nav a:hover {
+			color: #D4D4D4 !important;
+			background: #3C3C3C;
+		}
+
+		#nav a.active {
+			background: #007ACC;
+		}
+
+			#nav a.active:before {
+				content: '';
+				display: block;
+				position: absolute;
+				bottom: -0.6em;
+				left: 50%;
+				margin-left: -0.75em;
+				border-left: solid 0.75em transparent;
+				border-right: solid 0.75em transparent;
+				border-top: solid 0.6em #007ACC;
+			}
+
 
 /* Actions */
 
@@ -6118,6 +6198,8 @@ input, select, textarea {
 		-webkit-transition-delay: 0s;
 		-ms-transition-delay: 0s;
 		transition-delay: 0s;
+		/*width: 400px;
+		height: 300px;*/
 	}
 
 	.gallery.onscroll-fade-in article:nth-child(2) .image img {
@@ -6869,7 +6951,7 @@ input, select, textarea {
 			display: block;
 			position: relative;
 			overflow: hidden;
-			width: 22.5rem;
+			width: 15rem;
 			max-width: 75vw;
 		}
 
