@@ -72,6 +72,10 @@ input, select, textarea {
 	appearance: none;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 /* Basic */
 
 	@-ms-viewport {
